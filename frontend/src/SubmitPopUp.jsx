@@ -115,25 +115,25 @@ const SubmitPopUp = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 max-w-xl w-full text-center">
-        <h2 className="text-2xl font-bold text-gray-800 mb-10">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <div className="bg-white/90 backdrop-blur-sm rounded-xl md:rounded-3xl shadow-xl md:shadow-2xl p-4 md:p-8 max-w-xl w-full text-center mx-2">
+        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-5 md:mb-10">
           ⚠️ Are you sure you want to submit your quiz?
         </h2>
-        <p className="text-gray-600 mb-10">
-          Once submitted, you won’t be able to change your answers.
+        <p className="text-sm md:text-base text-gray-600 mb-5 md:mb-10">
+          Once submitted, you won't be able to change your answers.
         </p>
 
-        <div className="flex justify-center gap-5">
+        <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-5">
           <button
             onClick={() => navigate("/quiz")}
-            className="cursor-pointer px-6 py-3 rounded-2xl border border-gray-400 text-gray-700 font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
+            className="cursor-pointer px-4 md:px-6 py-2 md:py-3 rounded-xl md:rounded-2xl border border-gray-400 text-gray-700 font-semibold text-base md:text-lg hover:bg-gray-100 transition-all duration-300"
           >
             🔙 Revisit
           </button>
           <button
             onClick={handleSubmit}
-            className="cursor-pointer px-6 py-3 rounded-2xl bg-green-400 text-white font-semibold text-lg shadow-md hover:scale-105 transition-all duration-300"
+            className="mt-2 md:mt-0 cursor-pointer px-4 md:px-6 py-2 md:py-3 rounded-xl md:rounded-2xl bg-green-400 text-white font-semibold text-base md:text-lg shadow-md hover:scale-105 transition-all duration-300"
           >
             ✅ Submit
           </button>

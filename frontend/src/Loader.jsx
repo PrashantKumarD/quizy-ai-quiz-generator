@@ -48,20 +48,25 @@ const Loader = ({ type = "quiz" }) => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="flex flex-col items-center justify-center h-screen"
+      className="flex flex-col items-center justify-center h-screen p-4"
     >
       <div className="relative">
-        <Atom color="#3731cc" size="large" text="" textColor="" />
+        <Atom
+          color="#3731cc"
+          size={window.innerWidth < 640 ? "medium" : "large"}
+          text=""
+          textColor=""
+        />
       </div>
 
-      <p className="font-['Italiana'] mt-7 text-5xl flex font-bold text-gray-700">
+      <p className="font-['Italiana'] mt-5 md:mt-7 text-3xl md:text-5xl flex flex-col md:flex-row font-bold text-gray-700 text-center">
         Generating Your{" "}
-        <p className="text-[#3731cc] ml-2 text-orange-400">
+        <p className="text-[#3731cc] md:ml-2 text-orange-400">
           {type === "feedback" ? "Feedback" : "Quiz"}
         </p>
       </p>
 
-      <p className="mt-7 text-2xl font-semibold text-gray-600 animate-pulse">
+      <p className="mt-5 md:mt-7 text-lg md:text-2xl font-semibold text-gray-600 animate-pulse text-center px-2">
         {text}
       </p>
     </div>

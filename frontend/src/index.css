@@ -9,10 +9,20 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     position: relative;
+    min-width: 320px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 640px) {
+    body {
+      font-size: 14px;
+    }
   }
 }
 
@@ -31,6 +41,21 @@
 
   .text-orange-400 {
     color: #fb923c;
+  }
+  
+  .responsive-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .responsive-text {
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.125rem);
+  }
+
+  .no-tap-highlight {
+    -webkit-tap-highlight-color: transparent;
   }
 }
 

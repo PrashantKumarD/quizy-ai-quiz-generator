@@ -19,6 +19,7 @@ function App() {
         backgroundRepeat: "no-repeat",
         minHeight: "100vh",
         width: "100%",
+        overflowX: "hidden",
       }}
     >
       <QuizProvider>

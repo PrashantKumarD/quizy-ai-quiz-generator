@@ -45,12 +45,12 @@ const SettingSelection = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="font-['Quicksand'] text-4xl font-bold text-green-400 mb-7 text-center shadow-text">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-6">
+      <h1 className="font-['Quicksand'] text-2xl md:text-4xl font-bold text-green-400 mb-5 md:mb-7 text-center shadow-text">
         Configure Your Quiz
       </h1>
-      <div className="max-w-2xl w-full bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-8 mx-auto">
-        <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+      <div className="max-w-2xl w-full bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 md:p-8 mx-auto">
+        <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center text-gray-800">
           Quiz Settings
         </h2>
 
