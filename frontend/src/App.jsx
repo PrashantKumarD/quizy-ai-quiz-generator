@@ -10,7 +10,16 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="min-h-screen w-full bg-quiz-bg bg-cover bg-center bg-no-repeat">
+    <div 
+      style={{ 
+        backgroundImage: "url('/myback31.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+        width: "100%"
+      }}
+    >
       <QuizProvider>
         <Toaster position="top-center" reverseOrder={false} />
         <Router>
