@@ -6,15 +6,15 @@ import SettingSelection from "./SettingSelection";
 import QuestionCard from "./QuestionCard";
 import SubmitPopUp from "./SubmitPopUp";
 import Result from "./Result";
-import {Toaster} from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="min-h-screen w-full bg-[url('/myback31.jpg')] bg-cover bg-center bg-no-repeat">
+    <div className="min-h-screen w-full bg-quiz-bg bg-cover bg-center bg-no-repeat">
       <QuizProvider>
         <Toaster position="top-center" reverseOrder={false} />
         <Router>
-          <div >
+          <div>
             <Routes>
               <Route path="/" element={<TopicSelection />} />
               <Route path="/settings" element={<SettingSelection />} />

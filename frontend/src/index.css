@@ -16,9 +16,22 @@
   }
 }
 
-body {
-  position: relative;
+.bg-white\/90 {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+@layer utilities {
+  .text-\[\#3731cc\] {
+    color: #3731cc;
+  }
+
+  .text-orange-400 {
+    color: #fb923c;
+  }
+}
 
 

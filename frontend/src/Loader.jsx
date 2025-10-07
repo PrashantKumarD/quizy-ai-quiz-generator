@@ -40,7 +40,7 @@ const Loader = ({ type = "quiz" }) => {
   }, [messages]);
 
   return (
-    <div className=" flex flex-col items-center justify-center h-screen bg-[url('/myback31.jpg')] bg-cover bg-center bg-no-repeat">
+    <div className="flex flex-col items-center justify-center h-screen bg-quiz-bg bg-cover bg-center bg-no-repeat">
       <div className="relative">
         <Atom color="#3731cc" size="large" text="" textColor="" />
       </div>
