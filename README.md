@@ -102,7 +102,7 @@ quizy-ai-quiz-generator/
 
 ### API Integration
 
-- Frontend uses Axios to communicate with the backend
+- Frontend uses fetch to communicate with the backend
 - Backend communicates with AI services (OpenAI and Google Gemini)
 - Environment variables manage API endpoints and keys
 
