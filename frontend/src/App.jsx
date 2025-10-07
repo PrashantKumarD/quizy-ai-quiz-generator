@@ -10,14 +10,15 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div 
-      style={{ 
-        backgroundImage: "url('/myback31.jpg')",
+    <div
+      style={{
+        backgroundImage:
+          "url('https://res.cloudinary.com/drihhul5s/image/upload/v1759866326/myback31_b1x4sx.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         minHeight: "100vh",
-        width: "100%"
+        width: "100%",
       }}
     >
       <QuizProvider>

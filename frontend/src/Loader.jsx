@@ -40,12 +40,13 @@ const Loader = ({ type = "quiz" }) => {
   }, [messages]);
 
   return (
-    <div 
-      style={{ 
-        backgroundImage: "url('/myback31.jpg')",
+    <div
+      style={{
+        backgroundImage:
+          "url('https://res.cloudinary.com/drihhul5s/image/upload/v1759866326/myback31_b1x4sx.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
       }}
       className="flex flex-col items-center justify-center h-screen"
     >
