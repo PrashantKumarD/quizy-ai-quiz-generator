@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json({ limit: "1mb" }));
 app.use(rateLimiter);
 
-app.get("/", (req, res) => res.send("AI-Assisted Quiz API is live ⚡"));
+app.get("/", (req, res) => res.send("AI-Assisted Quiz API is working"));
 
 app.use("/api/ai", aiRoutes);
 app.use("/api/quiz", quizRoutes);
